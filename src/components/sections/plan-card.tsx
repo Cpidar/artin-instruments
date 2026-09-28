@@ -24,7 +24,7 @@ export function PlanCard({ plan }: PlanCardProps): React.ReactElement {
     >
       <PlanCardHeader plan={plan} />
       <PlanExamples examples={plan.examples} />
-      <PlanPrices plan={plan} />
+      {/*<PlanPrices plan={plan} />*/}
       <PlanBulletList
         title={copy.advantagesLabel}
         items={plan.advantages}
