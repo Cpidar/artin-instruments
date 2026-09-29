@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --cream: #f2f1eb;
-  --olive: #4a5d4e;
-  --olive-mid: #8a9685;
-  --olive-light: #bfc1b0;
-  --charcoal: #121212;
-  --muted: #6b7280;
+  --cream: #f3f5fb;        /* soft blue-tinted background (blue-50) */
+  --olive: #19398d;        /* deep blue (blue-800) */
+  --olive-mid: #3b82f6;    /* medium blue (blue-500) */
+  --olive-light: #93c5fd;  /* light blue (blue-300) */
+  --charcoal: #0a0a0a;     /* near-black slate */
+  --muted: #454545;        /* muted slate-blue gray */
   --background: var(--cream);
   --foreground: var(--charcoal);
 }

@@ -215,7 +215,26 @@ export const site: SiteContent = {
   },
   // خالی به‌صورت عمدی. فقط با پروژه‌های واقعی تکمیل شود:
   // .cursor/rules/projects-empty.mdc
-  projects: [],
+  projects: [
+    {
+      title: "نشت‌یاب هلیوم ALD404",
+      image: "/images/projects/1.png",
+      alt: "",
+      category: "پروژه",
+    },
+    {
+      title: "طیف سنج جرمی مغناطیس",
+      image: "/images/projects/2.png",
+      alt: "",
+      category: "پروژه",
+    },
+    {
+      title: "آشکارسازهای گازی",
+      image: "/images/projects/3.png",
+      alt: "",
+      category: "پروژه",
+    },
+  ],
   plansSection: {
     eyebrow: "محصولات",
     heading: "محصولات و راهکارهای آرتین",

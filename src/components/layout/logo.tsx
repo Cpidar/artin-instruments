@@ -15,15 +15,15 @@ export function LogoMark({ className }: LogoMarkProps): React.ReactElement {
     >
       <path
         d="M32 4h28c12.15 0 22 9.85 22 22v58H54c-12.15 0-22-9.85-22-22V4Z"
-        fill="#BFC1B0"
+        fill="#93c5fd"
       />
       <path
         d="M18 16h28c12.15 0 22 9.85 22 22v58H40c-12.15 0-22-9.85-22-22V16Z"
-        fill="#8A9685"
+        fill="#3b82f6"
       />
       <path
         d="M4 28h28c12.15 0 22 9.85 22 22v46H26c-12.15 0-22-9.85-22-22V28Z"
-        fill="#4A5D4E"
+        fill="#1e40af"
       />
     </svg>
   );

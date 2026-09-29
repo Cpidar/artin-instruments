@@ -3,6 +3,7 @@ import { site } from "@/content/site";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { LogoMark } from "@/components/layout/logo";
+import Image from 'next/image';
 
 function DotGrid(): React.ReactElement {
   return (
@@ -23,13 +24,16 @@ export function Hero(): React.ReactElement {
       id="inicio"
       className="bg-cream relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28"
     >
-      <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
+      <Container className="grid items-center gap-36 lg:grid-cols-2 lg:gap-8">
         <div>
           <h1 className="text-charcoal max-w-xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.4rem] lg:leading-[1.15]">
-            توسعه تجهیزات پیشرفته و <span className="text-olive">فناوری‌های خلأ</span> دقیق.
+            توسعه تجهیزات پیشرفته و{" "}
+            <span className="text-olive">فناوری‌های خلأ</span> دقیق.
           </h1>
           <p className="text-muted mt-5 max-w-lg text-base leading-7">
-            طراحی و ساخت نشت‌یاب‌های هلیومی، طیف‌سنج‌های جرمی و محفظه‌های خلأ بالا (UHV) با تمرکز بر پایداری، دقت بی‌پایان و پاسخ‌گویی به نیازهای پیشرفته صنعتی و آزمایشگاهی.
+            طراحی و ساخت نشت‌یاب‌های هلیومی، طیف‌سنج‌های جرمی و محفظه‌های خلأ
+            بالا (UHV) با تمرکز بر پایداری، دقت بی‌پایان و پاسخ‌گویی به نیازهای
+            پیشرفته صنعتی و آزمایشگاهی.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#servicios" variant="charcoal">
@@ -59,13 +63,20 @@ export function Hero(): React.ReactElement {
         </div>
         <div className="relative flex flex-col items-center">
           <DotGrid />
-          <LogoMark className="h-56 w-48 sm:h-64 sm:w-56" />
-          <p className="text-olive mt-6 text-3xl font-bold tracking-[0.18em]">
+          <Image
+            width={600}
+            height={600}
+            src="/images/projects/4.png"
+            alt="Premium athletic shoe with feature highlights"
+            // className="h-10 w-48 sm:h-64 sm:w-56"
+          />
+          {/*<LogoMark className="h-56 w-48 sm:h-64 sm:w-56" />*/}
+          {/*<p className="text-olive mt-6 text-3xl font-bold tracking-[0.18em]">
             ARTIN
           </p>
           <p className="text-olive/80 mt-1 text-xs font-medium tracking-[0.35em]">
             INSTRUMENTS
-          </p>
+          </p>*/}
         </div>
       </Container>
     </section>
