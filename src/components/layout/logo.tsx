@@ -48,7 +48,7 @@ export function Logo({
     >
       <LogoMark className={cn("h-8 w-7", markClassName)} />
       {wordmark ? (
-        <span className="text-lg font-bold tracking-[0.08em]">پرتو آرتین</span>
+        <span className="text-lg font-bold tracking-[0.08em]">آشکار ساز پرتو آرتین</span>
       ) : null}
     </a>
   );

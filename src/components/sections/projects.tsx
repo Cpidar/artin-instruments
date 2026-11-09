@@ -13,7 +13,7 @@ export function Projects(): React.ReactElement {
   const cta = isEmpty ? site.projectsEmpty.cta : site.projectsFilled.cta;
 
   return (
-    <section id="proyectos" className="bg-cream py-20 lg:py-24">
+    <section id="products" className="bg-cream py-20 lg:py-24">
       <Container>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -24,9 +24,9 @@ export function Projects(): React.ReactElement {
               {heading}
             </h2>
           </div>
-          <Button href={site.projectsCtaHref} variant="olive">
+          {/*<Button href={site.projectsCtaHref} variant="olive">
             {cta}
-          </Button>
+          </Button>*/}
         </div>
         {isEmpty ? <ProjectsEmpty /> : <ProjectsGrid />}
       </Container>
@@ -48,7 +48,7 @@ function ProjectsEmpty(): React.ReactElement {
 
 function ProjectsGrid(): React.ReactElement {
   return (
-    <ul className="mt-12 grid gap-8 md:grid-cols-3">
+    <ul className="mt-12 grid gap-8 md:grid-cols-4">
       {site.projects.map((project) => (
         <li key={project.title}>
           <article>
@@ -64,7 +64,7 @@ function ProjectsGrid(): React.ReactElement {
             <h3 className="text-charcoal mt-4 text-base font-semibold">
               {project.title}
             </h3>
-            <p className="text-muted mt-1 text-sm">{project.category}</p>
+            {/*<p className="text-muted mt-1 text-sm">{project.category}</p>*/}
           </article>
         </li>
       ))}

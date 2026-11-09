@@ -11,10 +11,10 @@ export default function Home(): React.ReactElement {
     <main>
       <Hero />
       <Services />
+      <Projects />
       <ImageHotspotFeatures />
       {/*<Plans />*/}
       <About />
-      <Projects />
       <ContactCta />
     </main>
   );

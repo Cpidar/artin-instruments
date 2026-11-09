@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { site } from "@/content/site";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -18,7 +18,7 @@ export function ContactCta(): React.ReactElement {
   const mailto = `mailto:${site.email}`;
 
   return (
-    <section id="contacto" className="bg-cream pb-16">
+    <section id="contact" className="bg-cream py-16">
       <Container>
         <div className="rounded-3xl bg-[#e8e7e1] px-6 py-10 sm:px-10">
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
@@ -33,14 +33,14 @@ export function ContactCta(): React.ReactElement {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-12">
               <div>
                 <p className="text-olive text-xs font-semibold tracking-[0.18em]">
-                  ایمیل پشتیبانی
+                  تلفن تماس
                 </p>
                 <a
                   href={mailto}
                   className="text-charcoal hover:text-olive mt-2 inline-flex items-center gap-2 text-sm"
                 >
-                  <Mail className="text-olive size-4" aria-hidden="true" />
-                  {site.email}
+                  {site.phone}
+                  <Phone direction={"rtl"} className="text-olive size-4" aria-hidden="true" />
                 </a>
               </div>
               <div>

@@ -31,9 +31,11 @@ export function Hero(): React.ReactElement {
             <span className="text-olive">فناوری‌های خلأ</span> دقیق.
           </h1>
           <p className="text-muted mt-5 max-w-lg text-base leading-7">
-            طراحی و ساخت نشت‌یاب‌های هلیومی، طیف‌سنج‌های جرمی و محفظه‌های خلأ
-            بالا (UHV) با تمرکز بر پایداری، دقت بی‌پایان و پاسخ‌گویی به نیازهای
-            پیشرفته صنعتی و آزمایشگاهی.
+            طراحی و ساخت دستگاه نشت یاب هلیوم (Helium Leak Detector)<br />
+            طراحی و ساخت دستگاه های طیف سنج جرمی مغناطیسی (Mass Spectrometer)<br />
+            طراحی و ساخت پمپ های یونی مقیاس کوچک<br />
+            طراحی و ساخت آشکارسازهای گازی<br />
+            مشاوره، طراحی و ساخت تجهیزات پیشرفته خلأ بالا
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#servicios" variant="charcoal">
@@ -45,7 +47,7 @@ export function Hero(): React.ReactElement {
             </Button>
           </div>
           <ul className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-x-8">
-            {site.heroPills.map((pill) => {
+            {/*{site.heroPills.map((pill) => {
               const Icon = pill.icon;
               return (
                 <li
@@ -58,7 +60,7 @@ export function Hero(): React.ReactElement {
                   {pill.label}
                 </li>
               );
-            })}
+            })}*/}
           </ul>
         </div>
         <div className="relative flex flex-col items-center">

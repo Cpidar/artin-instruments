@@ -98,6 +98,7 @@ export interface SiteContent {
   name: string;
   shortName: string;
   email: string;
+  phone: string;
   description: string;
   nav: NavItem[];
   socials: SocialLink[];
@@ -117,15 +118,16 @@ export const site: SiteContent = {
   name: "آشکار ساز پرتو آرتین",
   shortName: "ARTIN",
   email: "support@artin-instruments.ir",
+  phone: "09360122337 - 09387589229",
   description:
     "ارائه خدمات تخصصی در زمینه ابزارهای آنالیزی، نشت‌یابی صنعتی و ساخت تجهیزات خلأ بالا با تکیه بر دانش متخصصان ایرانی.",
   nav: [
-    { id: "inicio", href: "#inicio", label: "خانه" },
-    { id: "servicios", href: "#services", label: "محصولات ما" },
-    { id: "planes", href: "#planes", label: "قطعات خلأ بالا" },
-    { id: "sobre-nosotros", href: "#sobre-nosotros", label: "درباره ما" },
-    { id: "proyectos", href: "#proyectos", label: "فیلامنت‌ها" },
-    { id: "contacto", href: "#contacto", label: "تماس با ما" },
+    { id: "inicio", href: "#", label: "خانه" },
+    { id: "servicios", href: "#products", label: "محصولات" },
+    { id: "planes", href: "#services", label: "خدمات" },
+    { id: "proyectos", href: "#blog", label: "وبلاگ" },
+    { id: "sobre-nosotros", href: "#about", label: "درباره ما" },
+    { id: "contacto", href: "#contact", label: "تماس با ما" },
   ],
   socials: [
     {
@@ -151,25 +153,25 @@ export const site: SiteContent = {
   ],
   services: [
     {
-      title: "نشت‌یاب هلیوم مدل ALD404",
+      title: "خدمات آزمون و نشت یابی تجهیزات تحت خلأ، لوله های نفت و پتروشیمی و مخازن تحت فشار",
       description:
-        "تشخیص نشت‌های فوق‌ریز در محیط‌های صنعتی و آزمایشگاهی با عملکردی پایدار و قابل اعتماد برای گازهای سبک مانند هلیوم-۴، هلیوم-۳ و هیدروژن.",
+        "تشخیص نشت‌های فوق‌ریز در محیط‌های صنعتی و آزمایشگاهی با عملکردی پایدار و قابل اعتماد",
       icon: Cpu,
     },
     {
-      title: "طیف سنج جرمی مغناطیس",
+      title: "تعمیر و راه اندازی دستگاه های نشت یاب هلیوم",
       description:
         "آنالیز کیفی و کمی با اندازه‌گیری دقیق نسبت جرم به بار (m/z) یون‌ها؛ ابزاری مرجع برای آزمایشگاه‌های پیشرفته، صنایع دارویی و پتروشیمی.",
       icon: BarChart3,
     },
     {
-      title: "آشکارسازهای گازی",
+      title: "تعمیر، اصلاح و ساخت فیلامنت های تجهیزات پیشرفته آنالیزی",
       description:
         "شناسایی ذرات یونیزان (آلفا، بتا، گاما و نوترون) در مدل‌های اتاقک یونش، تناسبی و گایگر مولر با طراحی دقیق و حساسیت بالا.",
       icon: Bot,
     },
     {
-      title: "طراحی و ساخت قطعات خلأ بالا",
+      title: "مشاوره، طراحی و ساخت تجهیزات پیشرفته خلأ بالا",
       description:
         "تولید محفظه‌های خلأ بالا (UHV)، فیدتروهای سرامیکی و فلنج‌های مهندسی‌شده با دقت بالا؛ از ایده تا اجرا.",
       icon: Code2,
@@ -217,13 +219,13 @@ export const site: SiteContent = {
   // .cursor/rules/projects-empty.mdc
   projects: [
     {
-      title: "نشت‌یاب هلیوم ALD404",
+      title: "دستگاه نشت یاب هلیوم",
       image: "/images/projects/1.png",
       alt: "",
       category: "پروژه",
     },
     {
-      title: "طیف سنج جرمی مغناطیس",
+      title: "دستگاه های طیف سنج جرمی مغناطیسی",
       image: "/images/projects/2.png",
       alt: "",
       category: "پروژه",
@@ -231,6 +233,12 @@ export const site: SiteContent = {
     {
       title: "آشکارسازهای گازی",
       image: "/images/projects/3.png",
+      alt: "",
+      category: "پروژه",
+    },
+    {
+      title: "پمپ های یونی مقیاس کوچک",
+      image: "/images/projects/1.png",
       alt: "",
       category: "پروژه",
     },

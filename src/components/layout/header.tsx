@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/layout/logo";
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { Phone } from "lucide-react";
 
 export function Header(): React.ReactElement {
   const [activeId, setActiveId] = useState("inicio");
@@ -67,11 +68,12 @@ export function Header(): React.ReactElement {
         </nav>
         <div className="relative z-10 mr-auto flex items-center gap-2">
           <Button
-            href="#contacto"
+            href="tel:09387589229"
             variant="olive"
             className="hidden lg:inline-flex"
           >
-            تماس با ما
+            0938-758-9229
+            <Phone direction={"rtl"} className="size-4" aria-hidden="true" />
           </Button>
           <MobileNav />
         </div>

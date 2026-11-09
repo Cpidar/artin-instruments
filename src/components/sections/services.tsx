@@ -5,11 +5,11 @@ import { Container } from "@/components/ui/container";
 
 export function Services(): React.ReactElement {
   return (
-    <section id="servicios" className="bg-white py-20 lg:py-24">
+    <section id="services" className="bg-white py-20 lg:py-24">
       <Container className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.6fr)] lg:items-start">
         <div>
           <p className="text-olive text-xs font-semibold tracking-[0.22em]">
-            محصولات و خدمات
+            خدمات
           </p>
           <h2 className="text-charcoal mt-3 max-w-xs text-3xl font-bold tracking-tight">
             راهکارهای مهندسی دقیق و ابزارهای آنالیزی

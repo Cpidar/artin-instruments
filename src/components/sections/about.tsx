@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/container";
 export function About(): React.ReactElement {
   return (
     <section
-      id="sobre-nosotros"
+      id="about"
       className="bg-charcoal py-20 text-white lg:py-24"
     >
       <Container className="grid items-center gap-14 lg:grid-cols-2">
